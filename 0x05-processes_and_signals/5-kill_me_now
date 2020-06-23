@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Bash script kills process specified when running.
+
+kill -f 4-to_infinity_and_beyond
