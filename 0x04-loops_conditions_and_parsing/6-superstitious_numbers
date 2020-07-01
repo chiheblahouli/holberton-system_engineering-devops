@@ -1,19 +1,20 @@
 #!/usr/bin/env bash
-#printing supersticious numbers
-i="1"
-while [ $i -lt 20 ]; do
-    echo "$i"
-    case $i in
-        4)
+#displays numbers 1 to 20 with different numbers printing different messages
 
-            echo "bad luck from China"
-        ;;
-        9)
-            echo "bad luck from Japan"
-        ;;
-        17)
-            echo "bad luck from Italy"
-        ;;
+n=1
+while [ $n -le 20 ]
+do
+    echo "$n"
+    case $n in
+	4)
+	    echo "bad luck from China"
+	    ;;
+	9)
+	    echo "bad luck from Japan"
+	    ;;
+	17)
+	    echo "bad luck from Italy"
+	    ;;
     esac
-    ((i++))
-done
+    ((n++))
+don
