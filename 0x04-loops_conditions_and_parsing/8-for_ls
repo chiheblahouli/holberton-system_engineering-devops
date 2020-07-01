@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Lists content of currdir in list format where only the part of the name after$
+
+
+for name in *; do
+echo "$name" | cut -d '-' -f 2
+done
