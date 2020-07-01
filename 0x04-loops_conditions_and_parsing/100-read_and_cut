@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# display the content of the file /etc/passwd
+
+motps=/etc/passwd
+while read -r line
+do
+  echo "$line" | cut -d ':' -f 1,3,6
+done < "$motps"
