@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#displays active IPV 4
+ifconfig -a | grep -G inet | cut -d " " -f12 | rev
