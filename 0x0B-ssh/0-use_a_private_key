@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# a bash scrite that uses ssh to get on the server.
+ssh -i ~/.ssh/holberton ubuntu@35.196.242.192
