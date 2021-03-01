@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-recieve alll
+Retrieve the user and the corresponding done tasks
 """
 
-import csv
 import requests
 from sys import argv
+import csv
 
 if __name__ == '__main__':
     userId = argv[1]
