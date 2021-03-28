@@ -24,5 +24,5 @@ exec { 'upindex':
 
 exec {'restart':
   provider => shell,
-  command  => 'sudo service nginx restart',
+  command  => 'sudo service nginx start',
 }
