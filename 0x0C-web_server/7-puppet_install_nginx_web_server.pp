@@ -16,7 +16,7 @@ exec {'conf':
   command  => 'sudo sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.google.com permanent;" /etc/nginx/sites-available/default',
 }
 
-file { 'upindex':
+exec { 'upindex':
   path    => '/var/www/html/index.nginx-debian.html',
   content => "Holberton School",
 }
