@@ -2,12 +2,14 @@
 
 exec {'up':
   provider => shell,
+  path     => '/usr/bin:/usr/sbin:/bin',
   command  => 'sudo apt-get -y update',
 }
 
 # install ngnix 
 exec {'ngin':
   provider => shell,
+  path     => '/usr/bin:/usr/sbin:/bin',
   command  => 'sudo apt-get -y install nginx',
 }
 
