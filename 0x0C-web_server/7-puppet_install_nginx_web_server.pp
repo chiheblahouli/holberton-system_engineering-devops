@@ -13,10 +13,10 @@ exec {'ngin':
 
 exec {'conf':
   provider => shell,
-  command  => 'sudo sed -i "/server_name _;/ \n\trewrite ^/redirect_me http://www.google.com permanent;" /etc/nginx/sites-available/default',
+  command  => 'sudo sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.google.com permanent;" /etc/nginx/sites-available/default',
 }
 
-file { 'up index':
+file { 'upindex':
   path    => '/var/www/html/index.nginx-debian.html',
   content => "Holberton School",
 }
